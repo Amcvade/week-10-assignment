@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 10 assignment</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    
+</head>
+<!--A Bootstrap styled table representing your choice of data.-->
+<body class="container">
+    <br>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-start-date">start Date</label>
+                    <input type="date" class="form-control" id="new-start-date">
+                </div>
+
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-end-date">end Date</label>
+                    <input type="date" class="form-control" id="new-end-date">
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-task">new-task</label>
+                    <input type="text" class="form-control" id="new-task" placeholder="task">
+
+                </div>
+            </div>
+        </div>
+        <!--A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.-->
+        <button id="add" class="btn btn-primary form-cotrol">create</button>
+    </div>
+</div>
+<table id="list" class="table table-dark table-striped">
+    <tr>
+        <th>Task</th>
+        <th>Date created</th>
+        <th>Start date</th>
+        <th>Due date</th>
+        <th>Actions</th>
+    </tr>
+</table>
+<script src="script.js"></script>
+     <script src="node_modules/jquery/dist/jquery.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
